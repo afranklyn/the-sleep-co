@@ -3,6 +3,8 @@
     navy: #192837
 */
 
+/* --------- Universal Reset ----------- */
+
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +13,7 @@
 
 
 
-/* image styles */
+/* --------- Image Styles ----------- */
 
 .bg-image {
     background-image: url(images/the-sleep-co-dark-bed.jpg);
@@ -19,7 +21,7 @@
     min-height: 10rem;
 }
 
-/* Universal styles and utility classes */
+/* ---------- Universal styles and utility classes---------- */
 
 
 body {
@@ -44,7 +46,7 @@ body {
 .tall-100        {min-height: 100vh;}
 
 
-/* Typography Styles */
+/*------------------ Typography Styles----------------- */
 
 h2 {
     font-size: 2.5rem;
@@ -106,7 +108,7 @@ a:hover {
 .text-center    {text-align: center;}
 .text-right     {text-align: right;}
 
-/* Header and footer styles */
+/*------------------ Header and footer styles-------------- */
 
 Header {
     background-image: url(images/the-sleep-co-white.jpg);
@@ -123,7 +125,7 @@ footer a {
     border:none;
 }
 
-/* Background Images */
+/*----------------- Background Images -------------------*/
 
 .bg-image-bed       {background-image: url(images/the-sleep-co-dark-bed.jpg);}
 .bg-image-pillow    {
@@ -135,7 +137,7 @@ footer a {
     background-position: 50% 35%;
 }
 
-/* Icon Grid */
+/*---------------------- Icon Grid ---------------------------*/
 
 .fa-solid {
     display: block;
