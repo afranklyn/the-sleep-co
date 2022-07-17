@@ -21,7 +21,7 @@
 }
 
 
-/* --------- Image Styles ----------- */
+/* --------- IMAGE STYLES ----------- */
 
 .bg-image {
     background-image: url(images/the-sleep-co-dark-bed.jpg);
@@ -29,13 +29,8 @@
     min-height: 10rem;
 }
 
-/* ---------- Universal styles and utility classes---------- */
 
-
-body {
-    font-family: 'catamaran', sans-serif;
-    color:#192837;
-}
+/* ---------- UTILITY CLASSES---------- */
 
 .padded         { padding: 5%;}
 .padded-sm      {padding: 1rem;}
@@ -52,6 +47,15 @@ body {
 .tall-80        {min-height: 80vh;}
 .tall-90        {min-height: 90vh;}
 .tall-100        {min-height: 100vh;}
+
+/* ---------- UNIVERSAL STYLES---------- */
+
+
+body {
+    font-family: 'catamaran', sans-serif;
+    color:#192837;
+}
+
 
 
 /*------------------ Typography Styles----------------- */
@@ -177,3 +181,41 @@ footer a {
     margin-bottom: 1rem;
     font-size: 3rem;
 }
+
+
+/*----------------GENERAL RESPONSIVE STYLES (apply everywhere unless overridden) ----------*/
+
+.show-xs,
+.show-sm,
+.show-md {
+  display: none;
+}
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* MD media query - will activate at all devices less than 1024px/64em  - we use ems as that is what gridlex uses */
+
+@media(max-width:64em) {
+  .show-md {display: block;}
+  .hide-md {display: none;}
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* SM media query - will activate at all devices less than 768px/48em  - we use ems as that is what gridlex uses */
+
+@media(max-width:48em) {
+  .show-sm {display: block;}
+  .hide-sm {display: none;}
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* XS media query - will activate at all devices less than 576px/36em  - we use ems as that is what gridlex uses */
+
+@media(max-width:36em) {
+  .show-xs {display: block;}
+  .hide-xs {display: none;}
+}
+
+
+
+
+
+s
