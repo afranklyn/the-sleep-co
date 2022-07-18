@@ -60,6 +60,11 @@ body {
 
 /*------------------ Typography Styles----------------- */
 
+h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
 h2 {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -165,6 +170,7 @@ footer a {
 .bg-image {
     background-image: url(images/the-sleep-co-dark-bed.jpg);
     background-size: cover;
+    border: 1px solid grey;
     
 }
 
