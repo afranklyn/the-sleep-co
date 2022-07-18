@@ -20,6 +20,10 @@
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /* --------- IMAGE STYLES ----------- */
 
@@ -170,7 +174,9 @@ footer a {
 .bg-image {
     background-image: url(images/the-sleep-co-dark-bed.jpg);
     background-size: cover;
-    border: 1px solid grey;
+    min-height: 20vh; 
+    /* REMOVE MIN HEIGHT */
+   
     
 }
 
