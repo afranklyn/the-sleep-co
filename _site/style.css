@@ -45,6 +45,13 @@ img {
 
 }
 
+.bg-light { 
+    background-color: #E3ECF2;
+
+}
+
+
+
 .tall-50        {min-height: 50vh;}
 .tall-60        {min-height: 60vh;}
 .tall-70        {min-height: 70vh;}
@@ -174,11 +181,15 @@ footer a {
 .bg-image {
     background-image: url(images/the-sleep-co-dark-bed.jpg);
     background-size: cover;
-    min-height: 20vh; 
-    /* REMOVE MIN HEIGHT */
-   
-    
+    background-repeat: no-repeat;
+    background-color: rgb(240,240,240);
+    background-position: center;
+
 }
+
+.landscape {padding-bottom: 65%}
+.portrait {padding-bottom: 125%}
+.square {padding-bottom: 100%}
 
 .bg-image-bed       {background-image: url(images/the-sleep-co-dark-bed.jpg);}
 .bg-image-pillow    {
