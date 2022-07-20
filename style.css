@@ -287,8 +287,27 @@ textarea {
     display: block;
     font-family: inherit;
     font-size: 0.9rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
     padding: 0.5rem;
+    border: 2 px solid transparent;
+    
+}
+
+/* the below sets the border when user is clicked into each area */
+input:focus,
+textarea:focus {
+    border: 2px solid #ffbe00;
+    outline: none;
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    background-color: #ffbe00;
+    appearance: none;
+    /* appearnace none removes 3d old school button look */
+    color: inherit;
+    border: 2px solid #192837;
+    /* use border with same color as background so you can see border when hover active */
 }
 
 
