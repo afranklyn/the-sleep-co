@@ -163,7 +163,7 @@ footer a {
     border:none;
 }
 
-/* BANNER STYLES */
+/*------------------ BANNER STYLES ------------------------*/
 
 .banner {
     background-image: url(images/the-sleep-co-white.jpg);
@@ -209,6 +209,18 @@ footer a {
     margin-bottom: 1rem;
     font-size: 3rem;
 }
+
+/*---------------------- BUTTONS AND FORMS ---------------------------*/
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+}
+
+
+
+
 
 
 /*----------------GENERAL RESPONSIVE STYLES (apply everywhere unless overridden) ----------*/
