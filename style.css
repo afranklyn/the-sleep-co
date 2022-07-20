@@ -16,16 +16,16 @@
     
 }
 
-[class*="grid-"] {
+/* [class*="grid-"] {
     margin: 0;
-}
+} */
 
 img {
     max-width: 100%;
 }
 
 
-
+/* ----------------------------- UNIVERSAL STYLES AND CLASSES  ------------------------------- */
 
 
 /* ---------- PADDING UTILITY CLASSES---------- */
@@ -95,7 +95,48 @@ img {
 .tall-70        {min-height: 70vh;}
 .tall-80        {min-height: 80vh;}
 .tall-90        {min-height: 90vh;}
-.tall-100        {min-height: 100vh;}
+.tall-100       {min-height: 100vh;}
+
+/* ---------- BACKGROUND AND IMAGES STYLES ---------- */
+
+.bg-dark { 
+    background-color: #192837;
+    color: white;
+}
+
+.bg-featured { 
+    background-color: #ffbe00;
+
+}
+
+.bg-light { 
+    background-color: #E3ECF2;
+
+}
+
+
+.bg-image {
+    background-image: url(images/the-sleep-co-dark-bed.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(240,240,240);
+    background-position: center;
+
+}
+
+/* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
+
+.landscape     { padding-bottom: 66%:  }
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 125%; }
+.square        { padding-bottom: 100%; }
+
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 
 
@@ -110,6 +151,10 @@ h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     line-height: 1.1;
 }
+
+h2 { font-size: 2.5rem;}
+h3 { font-size: 2rem;}
+h4 { font-size: 1.5rem;}
 
 p {
     font-weight: 200;
@@ -126,16 +171,6 @@ p:last-child {
 	margin-bottom: 0;
 }
 
-h2 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    line-height:1;
-}
-
 
 a {
     color: inherit;
@@ -147,35 +182,31 @@ a:hover {
     color:#ffbe00;
 }
 
-.featured-text  {color: #ffbe00;}
-.white-text  {color: white;}
 
-.small-text     {font-size: 1.5rem;}
-.medium-text    {
-    font-size: 2rem;
-    line-height: 1.1;
-}
-.big-text       {font-size: 4.5rem;}
+
+.font-weight-light            {font-weight: 200;}
+.font-weight-normal           {font-weight: 400;}
+.font-weight-extra-bold       {font-weight: 800;}
+
+.text-left                     {text-align: left;}
+.text-center                   {text-align: center;}
+.text-right                    {text-align: right;}
+
+.featured-text                 {color: #ffbe00;}
+.white-text                    {color: white;}
+
+.small-text                    {font-size: 1.5rem;}
+.medium-text                   {font-size: 2rem;}
+.big-text                      {font-size: 4.5rem;}
 
 .subtitle       {
     font-size: 1.2rem;
     color: rgb(120, 120, 125);
      }
 
-.quote-icon {
-    font-size: 6rem;
-    display: inline-block;
-    color: rgb(120, 120, 125);
-    line-height: 1;
-}
 
-.font-weight-light            {font-weight: 200;}
-.font-weight-normal           {font-weight: 400;}
-.font-weight-extra-bold       {font-weight: 800;}
 
-.text-left      {text-align: left;}
-.text-center    {text-align: center;}
-.text-right     {text-align: right;}
+
 
 /*------------------ HEADER AND FOOTER STYLES-------------- */
 
@@ -187,6 +218,10 @@ header a {
     display: inline-block;
     border-bottom: none;
     padding: 0.4rem;
+}
+
+nav a {
+    display: inline-block;
 }
 
 header {
@@ -218,34 +253,8 @@ footer a {
 
 
 
-/* ---------- BACKGROUND AND IMAGES STYLES ---------- */
+/* ---------- BACKGROUND IMAGES  ---------- */
 
-
-
-.bg-dark { 
-    background-color: #192837;
-    color: white;
-}
-
-.bg-featured { 
-    background-color: #ffbe00;
-
-}
-
-.bg-light { 
-    background-color: #E3ECF2;
-
-}
-
-
-.bg-image {
-    background-image: url(images/the-sleep-co-dark-bed.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(240,240,240);
-    background-position: center;
-
-}
 
 .bg-image-bed       {background-image: url(images/the-sleep-co-dark-bed.jpg);}
 .bg-image-pillow    {
@@ -258,24 +267,10 @@ footer a {
 }
 
 
-/* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
-
-.landscape     { padding-bottom: 66%:  }
-.portrait-tall { padding-bottom: 175%; }
-.portrait      { padding-bottom: 125%; }
-.square        { padding-bottom: 100%; }
-
-
-/* Background Position */
-.bg-pos-t { background-position: top; }
-.bg-pos-b { background-position: bottom; }
-.bg-pos-l { background-position: left; }
-.bg-pos-r { background-position: right; }
 
 
 
-
-/*---------------------- ICON GRID ---------------------------*/
+/*---------------------- FONT AWESOME ICONS  ---------------------------*/
 
 .fa-solid {
     display: block;
@@ -290,8 +285,22 @@ input,
 textarea {
     width: 100%;
     display: block;
+    font-family: inherit;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    padding: 0.5rem;
 }
 
+
+/*---------------------- TESTIMONIAL SECTION ---------------------------*/
+/* These are the quote icons */
+
+.quote-icon {
+    font-size: 6rem;
+    display: inline-block;
+    color: rgb(120, 120, 125);
+    line-height: 1;
+}
 
 
 
