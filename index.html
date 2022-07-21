@@ -1,6 +1,19 @@
 ---
 layout: default
 title: The Sleep Co
+featured:
+ - icon: fa-solid fa-cloud
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis, suscipit soluta natus iste laudantium, fugiat tempora numquam eum dignissimos vitae ratione corporis non sit odio! Officiis error pariatur consequuntur!
+ - icon: fa-solid fa-burger
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis, suscipit soluta natus iste laudantium, fugiat tempora numquam eum dignissimos vitae ratione corporis non sit odio! Officiis error pariatur consequuntur!
+ - icon: fa-solid fa-cake-candles
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis, suscipit soluta natus iste laudantium, fugiat tempora numquam eum dignissimos vitae ratione corporis non sit odio! Officiis error pariatur consequuntur!
+ - icon: fa-solid fa-cookie
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis, suscipit soluta natus iste laudantium, fugiat tempora numquam eum dignissimos vitae ratione corporis non sit odio! Officiis error pariatur consequuntur!
+ - icon: fa-solid fa-cake-candles
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis, suscipit soluta natus iste laudantium, fugiat tempora numquam eum dignissimos vitae ratione corporis non sit odio! Officiis error pariatur consequuntur!
+ - icon: fa-solid fa-cookie
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis, suscipit soluta natus iste laudantium, fugiat tempora numquam eum dignissimos vitae ratione corporis non sit odio! Officiis error pariatur consequuntur!
 ---
 
         
@@ -37,30 +50,21 @@ title: The Sleep Co
     </section>
 
 <!------------------------- Features Icon Section  ----------------------------->
-    <section class="padded grid bg-dark">
+    <section class="padded grid-center bg-dark">
         <div class="col-12 text-center">
             <h2><span class="featured-text">features</span> you will love</h2>
         </div>
 
-        <div class="padded-sm col-3_sm-6 xxs-stack">
-            <i class="fa-solid fa-cloud"></i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis, suscipit soluta natus iste laudantium, fugiat tempora numquam eum dignissimos vitae ratione corporis non sit odio! Officiis error pariatur consequuntur!</p>
-        </div>
+        {% for item in page.featured %}
 
         <div class="padded-sm col-3_sm-6 xxs-stack">
-            <i class="fa-solid fa-cloud"></i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis, suscipit soluta natus iste laudantium, fugiat tempora numquam eum dignissimos vitae ratione corporis non sit odio! Officiis error pariatur consequuntur!</p>
+            <i class="{{item.icon}}"></i>
+            <p>{{item.description}}</p>
         </div>
 
-        <div class="padded-sm col-3_sm-6 xxs-stack">
-            <i class="fa-solid fa-cloud"></i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis, suscipit soluta natus iste laudantium, fugiat tempora numquam eum dignissimos vitae ratione corporis non sit odio! Officiis error pariatur consequuntur!</p>
-        </div>
+        {% endfor %}
 
-        <div class="padded-sm col-3_sm-6 xxs-stack">
-            <i class="fa-solid fa-cloud"></i>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum officiis, suscipit soluta natus iste laudantium, fugiat tempora numquam eum dignissimos vitae ratione corporis non sit odio! Officiis error pariatur consequuntur!</p>
-        </div>
+       
     </section>
 
     <!------------------------- Yellow Image Banner Section  ----------------------------->
