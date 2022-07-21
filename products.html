@@ -4,10 +4,13 @@ title: Products
 cards:
  - heading: heading one
    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptatibus, esse, asperiores minima cum eius necessitatibus.
+   featured_image: images/the-sleep-co-dark-bed.jpg
  - heading: heading two
    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptatibus, esse, asperiores minima cum eius necessitatibus.
+   featured_image: images/the-sleep-co-dark-bed.jpg
  - heading: heading three
    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptatibus, esse, asperiores minima cum eius necessitatibus.
+   featured_image: images/the-sleep-co-white.jpg
 ---
 
 
@@ -55,7 +58,8 @@ cards:
     {% for item in page.cards %}
     <div class="col-4_sm-12 padded-sm">
         <div class="card">
-            <div class="bg-image portrait padded-sm"></div>
+            <!-- style attribute (below) allows images to be changed in CMS instead of in CSS. Must use _image so CloudCannon sees it as an image -->
+            <div class="bg-image portrait padded-sm" style="background-image: url('{{item.featured_image}}');"></div>
             <div class="padded-sm">
                 <h3>{{item.heading}}</h3>
                 <p>{{item.description}}</p>
