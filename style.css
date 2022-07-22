@@ -233,18 +233,25 @@ a:hover {
     font-size: 2.5em;
     line-height: 0.5;
     margin-top: -0.4rem;
-    position: fixed;
+    position: relative;
   /*  right and top determine where it is fixed - match to header padding. Top is higher to account for negative margin on symbol  */
     right: 1rem;
     top: 2.2rem;
   /* z-index allows hamburger icon to be seen when mobile menu shows   */
     z-index: 2;
   }
+
+  .hamburger-button i {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
   
 
   .hamburger-button.active {
     color: white;
   }
+
+ 
 
 
 /*------------------ HEADER AND FOOTER STYLES-------------- */

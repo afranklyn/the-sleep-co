@@ -9,7 +9,10 @@ $( document ).ready(function() {
         
       });
 
-
-
+// Animate on scroll - activate
+      AOS.init({
+        duration:500
+        // can change any defaults such as duration etc in here - view options in github
+      }); 
     
 });
