@@ -236,7 +236,7 @@ a:hover {
     position: relative;
   /*  right and top determine where it is fixed - match to header padding. Top is higher to account for negative margin on symbol  */
     right: 1rem;
-    top: 2.2rem;
+    top: 0.9rem;
   /* z-index allows hamburger icon to be seen when mobile menu shows   */
     z-index: 2;
   }
