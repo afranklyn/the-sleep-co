@@ -31,18 +31,40 @@
     <header class=" grid banner tall-70 md-tall-60">
 
         <div class="header-nav grid col-12">
-    <div class="col-5_sm-6_xs-12 sm-text-center">
+    <div class="col-5_sm-11">
         <a href="#" class="logo">
             <h2>The Sleep Co</h2>
         </a>
     </div>
-    <nav class="col-7_sm-6_xs-12 text-right sm-text-center">
+    <nav class="col-7_sm-12 text-right hide-sm">
         <a href="/index.html">Home</a>
         <a href="/about.html">About</a>
         <a href="/products.html">Products</a>
         <a href="/contact.html">Contact</a>
     </nav>
+
+<!-- THIS IS THE MOBILE MENU -->
+
+    <!-- columns must match up with the div class holding the logo on small devices - so if we have col 1 for the hamburger menu, the logo div will be col-11 on small deivces -->
+    <div class="col-1 show-sm">
+        <div class="hamburger-button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
 </div>
+
+<!-- The mobile menu will fill the page when displayed so does not need to be inside the div -->
+
+<nav class="mobile-menu bg-dark white-text padded">
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/products.html">Products</a>
+    <a href="/contact.html">Contact</a>
+</nav>
+
+
+
+
         
         <div class="col-12 text-center">
             <h3 class="font-weight-extra-bold">we're the<span class="featured-text"> best</span></h3>
@@ -140,6 +162,16 @@
         </div>
 
     </footer>
+
+
+    <!-- JQUERY SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- OUR CUSTOM JS FILE -->
+    <script src="scripts.js"></script>
+
+
+
 </body>
 
 </html>
